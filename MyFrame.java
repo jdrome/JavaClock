@@ -23,5 +23,20 @@ public class MyFrame extends JFrame {
         timeLabel.setText(time); // Makes the "timeLabel" the current time.
         this.add(timeLabel); // add method is part of Container class, which is superclass of JFrame. Adds our timeLabel to the GUI.
         this.setVisible(true);
+
+        setTime();
+    }
+
+    public void setTime() {
+        while(true) {
+            time = timeFormat.format(Calendar.getInstance().getTime()); // Utilizes Calendar class to get real-time data. Stores current time in "time" variable.
+            timeLabel.setText(time); // Makes the "timeLabel" the current time.
+            try {
+                Thread.sleep(1000);
+            }
+            catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
