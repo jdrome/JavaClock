@@ -4,6 +4,7 @@ import java.awt.Font;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 import javax.swing.JLabel;
+import java.awt.Color;
 
 public class MyFrame extends JFrame {
     Calendar calendar;
@@ -23,6 +24,9 @@ public class MyFrame extends JFrame {
         time = timeFormat.format(Calendar.getInstance().getTime()); // Utilizes Calendar class to get real-time data. Stores current time in "time" variable.
         timeLabel.setText(time); // Makes the "timeLabel" the current time.
         timeLabel.setFont(new Font("Verdana", Font.PLAIN,50));
+        timeLabel.setForeground(new Color(0x6CFFFF)); // Light Blue
+        timeLabel.setBackground(new Color(0x000)); // Black
+        timeLabel.setOpaque(true); // Display background of timeLabel
         this.add(timeLabel); // add method is part of Container class, which is superclass of JFrame. Adds our timeLabel to the GUI.
         this.setVisible(true);
 
