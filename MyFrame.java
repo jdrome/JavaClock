@@ -29,6 +29,7 @@ public class MyFrame extends JFrame {
         // Day and time formats
         timeFormat = new SimpleDateFormat("hh:mm:ss a");
         dayFormat = new SimpleDateFormat("EEEE");
+        dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 
         // Instantiate JLabel for time
         timeLabel = new JLabel();
@@ -40,10 +41,15 @@ public class MyFrame extends JFrame {
         // Intstantiate JLabel for day
         dayLabel = new JLabel();
         dayLabel.setFont(new Font("Phosphate", Font.PLAIN,35));
+
+        // Instantiate JLabel for date
+        dateLabel = new JLabel();
+        dateLabel.setFont(new Font("Arial", Font.PLAIN,25));
         
         // Add time and day labels to our frame
         this.add(timeLabel); // add method is part of Container class, which is superclass of JFrame. Adds our timeLabel to the GUI.
         this.add(dayLabel);
+        this.add(dateLabel);
 
         // Make visible
         this.setVisible(true);
@@ -57,8 +63,11 @@ public class MyFrame extends JFrame {
             time = timeFormat.format(Calendar.getInstance().getTime()); // Utilizes Calendar class to get real-time data. Stores current time in "time" variable.
             timeLabel.setText(time); // Makes the "timeLabel" the current time.
 
-            day = dayFormat.format(Calendar.getInstance().getTime()); // Utilizes Calendar class to get real-time data. Stores current time in "time" variable.
-            dayLabel.setText(day); // Makes the "timeLabel" the current time.
+            day = dayFormat.format(Calendar.getInstance().getTime()); // Utilizes Calendar class to get real-time data. Stores current day in "day" variable.
+            dayLabel.setText(day); // Makes the "dayLabel" the current day.
+
+            date = dateFormat.format(Calendar.getInstance().getTime()); // Utilizes Calendar class to get real-time data. Stores current day in "date" variable.
+            dateLabel.setText(date); // Makes the "dateLabel" the current date.
 
             try {
                 Thread.sleep(1000);
