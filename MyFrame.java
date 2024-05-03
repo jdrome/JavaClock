@@ -10,10 +10,12 @@ public class MyFrame extends JFrame {
     Calendar calendar;
     SimpleDateFormat timeFormat;
     SimpleDateFormat dayFormat;
+    SimpleDateFormat dateFormat;
     JLabel timeLabel;
     JLabel dayLabel;
     String time;
     String day;
+    String date;
 
     // MyFrame Constructor
     MyFrame() {
