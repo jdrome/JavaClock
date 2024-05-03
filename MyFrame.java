@@ -44,7 +44,7 @@ public class MyFrame extends JFrame {
 
         // Instantiate JLabel for date
         dateLabel = new JLabel();
-        dateLabel.setFont(new Font("Arial", Font.PLAIN,25));
+        dateLabel.setFont(new Font("Noteworthy", Font.PLAIN,25));
         
         // Add time and day labels to our frame
         this.add(timeLabel); // add method is part of Container class, which is superclass of JFrame. Adds our timeLabel to the GUI.
