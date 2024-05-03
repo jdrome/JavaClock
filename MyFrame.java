@@ -13,6 +13,7 @@ public class MyFrame extends JFrame {
     SimpleDateFormat dateFormat;
     JLabel timeLabel;
     JLabel dayLabel;
+    JLabel dateLabel;
     String time;
     String day;
     String date;
