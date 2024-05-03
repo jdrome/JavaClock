@@ -23,13 +23,13 @@ public class MyFrame extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Clocked");
         this.setLayout(new FlowLayout());
-        this.setSize(350, 220);
+        this.setSize(350, 250);
         this.setResizable(false);
 
         // Day and time formats
         timeFormat = new SimpleDateFormat("hh:mm:ss a");
         dayFormat = new SimpleDateFormat("EEEE");
-        dateFormat = new SimpleDateFormat("MMMMM/dd/yyyy");
+        dateFormat = new SimpleDateFormat("MMMMM dd, yyyy");
 
         // Instantiate JLabel for time
         timeLabel = new JLabel();
@@ -40,11 +40,11 @@ public class MyFrame extends JFrame {
         
         // Intstantiate JLabel for day
         dayLabel = new JLabel();
-        dayLabel.setFont(new Font("Phosphate", Font.PLAIN,35));
+        dayLabel.setFont(new Font("Noteworthy", Font.PLAIN,40));
 
         // Instantiate JLabel for date
         dateLabel = new JLabel();
-        dateLabel.setFont(new Font("Noteworthy", Font.PLAIN,35));
+        dateLabel.setFont(new Font("Noteworthy", Font.PLAIN,40));
         
         // Add time and day labels to our frame
         this.add(timeLabel); // add method is part of Container class, which is superclass of JFrame. Adds our timeLabel to the GUI.
