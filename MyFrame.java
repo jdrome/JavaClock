@@ -29,7 +29,7 @@ public class MyFrame extends JFrame {
         // Day and time formats
         timeFormat = new SimpleDateFormat("hh:mm:ss a");
         dayFormat = new SimpleDateFormat("EEEE");
-        dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        dateFormat = new SimpleDateFormat("MMMMM/dd/yyyy");
 
         // Instantiate JLabel for time
         timeLabel = new JLabel();
@@ -44,7 +44,7 @@ public class MyFrame extends JFrame {
 
         // Instantiate JLabel for date
         dateLabel = new JLabel();
-        dateLabel.setFont(new Font("Noteworthy", Font.PLAIN,25));
+        dateLabel.setFont(new Font("Noteworthy", Font.PLAIN,35));
         
         // Add time and day labels to our frame
         this.add(timeLabel); // add method is part of Container class, which is superclass of JFrame. Adds our timeLabel to the GUI.
