@@ -49,6 +49,9 @@
   <li>The time, day, and date will update every second automatically.</li>
 </ul>
 
+<h2>License</h2>
+<p>This project is licensed under the MIT License. See the license.txt file for more details.</p>
+
 <h2>Contact</h2>
 <ul>
   <li>GitHub: jdrome</li>
