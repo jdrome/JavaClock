@@ -25,7 +25,7 @@
   <li>Navigate to the directory where you want to clone the repository</li>
   <li>Run the following command to clone the repository:</li>
   <br>
-  <pre><code>git clone https://github.com/your-username/clock-project.git</code></pre>
+  <pre><code>git clone https://github.com/jdrome/JavaClock.git clock-project</code></pre>
 </ol>
 
 <h3>Navigate to the Project Directory</h3>
